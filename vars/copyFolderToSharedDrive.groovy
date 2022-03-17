@@ -12,10 +12,10 @@ def call(String sourceDir, String remoteDir) {
           makeEmptyDirs: false,
           noDefaultExcludes: false,
           patternSeparator: '[, ]+',
-          remoteDirectory: "${sourceDir}",
+          remoteDirectory: "${remoteDir}",
           remoteDirectorySDF: false,
           removePrefix: '',
-          sourceFiles: "${remoteDir}"
+          sourceFiles: "${sourceDir}"
         ]],
       usePromotionTimestamp: false,
       useWorkspaceInPromotion: false,
