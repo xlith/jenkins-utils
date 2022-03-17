@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call(String sourceBranch, String targetBranch) {
-  sshagent(credentials : ['tagtesterGitSSH']) {
+  sshagent(credentials : ['civan-test-dont-use']) {
       sh """
         git fetch origin &&
         git checkout -b ${targetBranch} origin/${targetBranch} &&

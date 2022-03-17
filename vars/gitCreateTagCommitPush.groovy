@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call(String newVersion, String buildTicketID, String branchName) {
-  sshagent(credentials : ['tagtesterGitSSH']) {
+  sshagent(credentials : ['civan-test-dont-use']) {
       sh """
         git diff &&
         git commit -am "${buildTicketID}: New version ready to be published ${newVersion}" &&
