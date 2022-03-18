@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String user, String email) {
+def call() {
     sh 'git --no-pager diff'
     sh 'git status'
 }
