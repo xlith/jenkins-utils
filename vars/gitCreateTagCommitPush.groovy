@@ -8,7 +8,8 @@ def call(String newVersion, String buildTicketID, String branchName) {
         git tag -a "${newVersion}" -m "${buildTicketID}: New version ${newVersion}" &&
         git push --set-upstream origin HEAD:${branchName} &&
         git push --tags &&
-        git push origin ${branchName} &&
+        git push origin &&
         git diff
       """
+
 }
