@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 
 def call(String newVersion, String buildTicketID, String branchName) {
-  sshagent(credentials : ['civan-test-dont-use']) {
       sh """
         git diff &&
         git status
@@ -12,5 +11,4 @@ def call(String newVersion, String buildTicketID, String branchName) {
         git push origin ${branchName} &&
         git diff
       """
-  }
 }

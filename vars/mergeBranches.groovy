@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 
 def call(String sourceBranch, String targetBranch) {
-  sshagent(credentials : ['civan-test-dont-use']) {
       sh """
         git fetch origin &&
         git checkout -b ${targetBranch} origin/${targetBranch} &&
@@ -9,5 +8,4 @@ def call(String sourceBranch, String targetBranch) {
         git push -v --tags --set-upstream origin HEAD:${targetBranch} &&
         git diff
       """
-  }
 }
