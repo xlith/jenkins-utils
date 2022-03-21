@@ -3,9 +3,6 @@ class CSGit {
         
     }
 
-    def call(args = null) {
-       return this
-    }
 
     static void printGitDiff() {
       sh 'git --no-pager diff'
