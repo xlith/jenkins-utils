@@ -1,3 +1,5 @@
+package org.comscore
+
 class CSGit {
     static void main(String[] args) {
         
