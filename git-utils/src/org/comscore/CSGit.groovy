@@ -1,6 +1,6 @@
 class CSGit {
-    static CSGit main(args = null) {
-        return this
+    static void main(String[] args) {
+        
     }
 
     def call(args = null) {
