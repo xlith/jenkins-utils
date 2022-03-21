@@ -1,4 +1,4 @@
-class Git {
+class CSGit {
     static Git main(args = null) {
         return this
     }
