@@ -1,5 +1,5 @@
 class CSGit {
-    static Git main(args = null) {
+    static CSGit main(args = null) {
         return this
     }
 
